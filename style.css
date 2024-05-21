@@ -1,0 +1,133 @@
+* {
+  overflow: hidden;
+}
+
+/* Aniamation */
+@keyframes jadu {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+/* Base Style  */
+body {
+  font-family: "Lato", sans-serif;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1583795484071-3c453e3a7c71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=100");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  background-size: 100%;
+  background-position-y: -300px;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  animation: jadu 1s 0.2s backwards;
+  width: 60%;
+  margin: auto auto;
+}
+
+/* Header  */
+.logo {
+  font-size: 18px;
+  font-weight: 800;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item {
+  margin-right: 60px;
+}
+.links {
+  display: flex;
+  list-style: none;
+  /* justify-content: space-evenly; */
+}
+.link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.4s;
+}
+.link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Main section */
+.main {
+  text-align: center;
+  margin: 20px;
+  padding: 50px;
+}
+.heading {
+  font-size: 64px;
+  font-weight: 900;
+  max-width: 80%;
+  margin: 30px auto;
+}
+.text {
+  font-size: 36px;
+  font-weight: 500;
+  opacity: 0.75;
+  margin: 50px auto;
+  line-height: 50px;
+}
+.text-bold {
+  font-weight: 700;
+  opacity: 1;
+}
+.form {
+  font-family: "Lato", sans-serif;
+}
+.input {
+  width: 80%;
+  padding: 20px;
+  opacity: 0.8;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: border 1s;
+}
+.btn {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: black;
+  outline: none;
+  color: white;
+  margin-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  border: none;
+  transition: all 1s;
+}
+.input::placeholder {
+  color: black;
+}
+.input:focus {
+  opacity: 1;
+  border: rgba(0, 0, 0, 0.5) solid 1px;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: green;
+}
+/* Footer  */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  border-top: rgba(255, 255, 255, 0.5) 1px solid;
+  padding: 20px;
+  opacity: 0.7;
+}
+.copyright {
+}
+.stats {
+}
